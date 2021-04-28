@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Главный контейнер-->
+    <div class="main-container">
+
+        <!--Навигация-->
+        <div class="header-info">
+            <div class="nav">
+                <div class="imgIcon"><img src="./img/new-timer.svg" alt="" width="50px" height="50px"></div>
+                <div class="Vremya"> <a href="index.html">Время:</a> </div>
+                <div class="setTimeDiv"><span id="timer-info"></span></div>
+            </div>
+            <div class="nav">
+                <div class="imgIcon"><img src="./img/new-date.svg" alt="" width="50px" height="50px"></div>
+                <div class="Vremya"> <a href="index.html">Дата:</a> </div> <span id="date-info"></span>
+            </div>
+            <div class="nav">
+                <div class="imgIcon"> <img src="./img/new-calendar.svg" alt="" width="50px" height="50px"></div> <a
+                    href="calendar.html">Календарь</a>
+            </div>
+            <div class="nav">
+                <div class="imgIcon"> <img src="./img/list-check.svg" alt="" width="50px" height="50px"></div><a
+                    class="ssilka" href="day.html">Список задач на текущую дату</a>
+            </div>
+
+        </div>
+
+        <!--Контейнер с иформацией сайта-->
+        <div class="main-info">
+
+            <!--Cоциальные сети-->
+            <div class="socialmedia-container">
+
+                <div class="socialmedia">
+                    <div class="media"><a href="#" class="media-text"> <img src="./img/insta2.svg" alt="" width="50px"
+                                height="50px"> Instagram</a> </div>
+                </div>
+                <div class="socialmedia">
+                    <div class="media"><a href="#" class="media-text"> <img src="./img/vk.svg" alt="" width="50px"
+                                height="50px"> Vk </a> </div>
+                </div>
+                <div class="socialmedia">
+                    <div class="media"><a href="#" class="media-text"> <img src="./img/telegram.svg" alt="" width="50px"
+                                height="50px"> Telegram</a> </div>
+                </div>
+                <div class="socialmedia">
+                    <div class="media"><a href="#" class="media-text"> <img src="./img/whatsapp.svg" alt="" width="50px"
+                                height="50px"> WP</a> </div>
+                </div>
+
+            </div>
+
+            <div class="overlay js-overlay-modal"></div>
+            <!--Контейнер заметок-->
+            <div class="week-list">
+                <!--Заметки на неделю-->
+                <div class="week-list1">
+
+
+                    <div class="DateName">
+
+                        <div class="days-for-dateName">
+                            <a href="#" class="js-open-modal" data-modal="1">День 1</a>
+                            <div class="modal" data-modal="1">
+                                <div class="days">
+                                    <div id="tdlApp">
+                                        <!--Текст заметки-->
+                                        <div class="DayText">
+                                            <h3 class="hText">-Напишите заметку на день!-</h2>
+                                                <h6 class="hText">Удалите, просто нажав на неё</h6>
+                                        </div>
+
+                                        <input type="text" class="form-control" placeholder="Новая задача">
+                                        <button class="showOnClick">Click to Show</button>
+                                        <div class="tdlDiv">
+                                            <ul class="List list-unstyled">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="DateName">
+                        <div class="days-for-dateName">
+                            <a href="#" class="js-open-modal" data-modal="2">День 2</a>
+                            <div class="modal" data-modal="2">
+                                <div class="days">
+                                    <div id="tdlApp">
+                                        <!--Текст заметки-->
+                                        <div class="DayText">
+                                            <h3 class="hText">-Напишите заметку на день!-</h2>
+                                                <h6 class="hText">Удалите, просто нажав на неё</h6>
+                                        </div>
+
+                                        <input type="text" class="form-control" placeholder="Новая задача">
+                                        <button class="showOnClick">Click to Show</button>
+                                        <div class="tdlDiv">
+                                            <ul class="List list-unstyled">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="DateName">
+                        <div class="days-for-dateName">
+                            <a href="#" class="js-open-modal" data-modal="3">День 3</a>
+                            <div class="modal" data-modal="3">
+                                <div class="days">
+                                    <div id="tdlApp">
+                                        <!--Текст заметки-->
+                                        <div class="DayText">
+                                            <h3 class="hText">-Напишите заметку на день!-</h2>
+                                                <h6 class="hText">Удалите, просто нажав на неё</h6>
+                                        </div>
+
+                                        <input type="text" class="form-control" placeholder="Новая задача">
+                                        <button class="showOnClick">Click to Show</button>
+                                        <div class="tdlDiv">
+                                            <ul class="List list-unstyled">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="DateName">
+                        <div class="days-for-dateName">
+                            <a href="#" class="js-open-modal" data-modal="4">День 4</a>
+                            <div class="modal" data-modal="4">
+                                <div class="days">
+                                    <div id="tdlApp">
+                                        <!--Текст заметки-->
+                                        <div class="DayText">
+                                            <h3 class="hText">-Напишите заметку на день!-</h2>
+                                                <h6 class="hText">Удалите, просто нажав на неё</h6>
+                                        </div>
+
+                                        <input type="text" class="form-control" placeholder="Новая задача">
+                                        <button class="showOnClick">Click to Show</button>
+                                        <div class="tdlDiv">
+                                            <ul class="List list-unstyled">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-list2">
+                    <div class="DateName2">
+                        <div class="days-for-dateName2">
+                            <a href="#" class="js-open-modal" data-modal="5">День 5</a>
+                            <div class="modal" data-modal="5">
+                                <div class="days">
+                                    <div id="tdlApp">
+                                        <!--Текст заметки-->
+                                        <div class="DayText">
+                                            <h3 class="hText">-Напишите заметку на день!-</h2>
+                                                <h6 class="hText">Удалите, просто нажав на неё</h6>
+                                        </div>
+
+                                        <input type="text" class="form-control" placeholder="Новая задача">
+                                        <button class="showOnClick">Click to Show</button>
+                                        <div class="tdlDiv">
+                                            <ul class="List list-unstyled">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="DateName2">
+                        <div class="days-for-dateName2">
+                            <a href="#" class="js-open-modal" data-modal="6">День 6</a>
+                            <div class="modal" data-modal="6">
+                                <div class="days">
+                                    <div id="tdlApp">
+                                        <!--Текст заметки-->
+                                        <div class="DayText">
+                                            <h3 class="hText">-Напишите заметку на день!-</h2>
+                                                <h6 class="hText">Удалите, просто нажав на неё</h6>
+                                        </div>
+
+                                        <input type="text" class="form-control" placeholder="Новая задача">
+                                        <button class="showOnClick">Click to Show</button>
+                                        <div class="tdlDiv">
+                                            <ul class="List list-unstyled">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="DateName2">
+                        <div class="days-for-dateName2">
+                            <a href="#" class="js-open-modal" data-modal="7">День 7</a>
+                            <div class="modal" data-modal="7">
+                                <div class="days">
+                                    <div id="tdlApp">
+                                        <!--Текст заметки-->
+                                        <div class="DayText">
+                                            <h3 class="hText">-Напишите заметку на день!-</h2>
+                                                <h6 class="hText">Удалите, просто нажав на неё</h6>
+                                        </div>
+
+                                        <input type="text" class="form-control" placeholder="Новая задача">
+                                        <button class="showOnClick">Click to Show</button>
+                                        <div class="tdlDiv">
+                                            <ul class="List list-unstyled">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+
+<script>
+    function setDays() {
+        var setDay = new Date($("#calendarDate").val());
+        let days = $(".dateText");
+        var note = $(".note");
+        var divDays = $(".DateName");
+        for (let i = 0; i < 7; i++) {
+            days[i].innerHTML = setDay.toDateString();
+            if (days[i].innerHTML == new Date().toDateString()) {
+                divDays[i].style.backgroundColor = 'rgb(' + 255 + ',' + 232 + ',' + 27 +
+                    ')';
+                divDays[i].style.color = "black"
+            } else {
+                divDays[i].style.backgroundColor = 'rgb(' + 118 + ',' + 102 + ',' + 141 + ')';
+                divDays[i].style.color = 'rgb(' + 88 + ',' + 252 + ',' + 102 + ')';
+            }
+            note[i].innerText = localStorage.getItem(days[i].innerHTML)
+            setDay.setDate(setDay.getDate() + 1);
+        }
+    }
+</script>

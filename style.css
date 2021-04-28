@@ -1,0 +1,454 @@
+/*главные теги*/
+* {
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(255, 231, 160), rgb(255, 191, 0));
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+ul {
+    list-style-type: decimal;
+}
+
+
+
+/*Позиционирование*/
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.main-info {
+    width: 100%;
+    height: 100%;
+    margin: 30px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.header-info {
+   
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #56778C; 
+    border: 2px #012340 solid;
+}
+
+.nav {
+    width: 25%;
+    height: 100%;
+    transition: 0.8s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    padding-left: 10px;
+    color: white;
+    font-weight: 400;
+}
+
+.nav:hover {
+    width: 27%;
+    font-size: 25px;
+}
+
+.calendar2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+#calendar {
+    width: 80%;
+    padding: 7px;
+    margin: 0px 20px 0 20px;
+    font-size: 20px;
+    background: rgba(150, 143, 250, 0);
+    border: 2px rgb(3, 3, 3) solid;
+    outline: none;
+}
+
+.form-control {
+    width: 200px;
+    height: 49px;
+    border: #107b7b 2px solid;
+    outline: none;
+}
+
+.form-control::placeholder {
+    font-size: 20px;
+}
+
+.showOnClick {
+    width: 150px;
+    height: 25px;
+    border: #107b7b 2px solid;
+    outline: none;
+}
+
+
+.week1 {
+    width: 40%;
+    height: 120%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #56778C;
+    font-family: 'Dancing Script', cursive;
+    border: 4px solid #012340;
+    box-shadow: 10px 10px 9px rgba(49, 49, 49, 0.829);
+    transition: 0.5s;
+}
+
+.week1:hover {
+    box-shadow: 5px 5px 9px rgba(49, 49, 49, 0.829);
+}
+
+
+.imgIcon {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.Vremya {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+
+
+
+
+.days {
+    overflow: hidden;
+    width: 80%;
+    height: 15%;
+    border: 2px rgb(126, 126, 126) solid;
+    box-shadow: 9px 9px 4px rgba(7, 7, 7, 0.822);
+    margin: 30px 20px 30px 20px;
+    font-size: 30px;
+    transition: 1s;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    background-image: repeating-linear-gradient(#f7f5f5 0px, #f9f8f8 24px, #107b7b 25px);
+}
+
+.days:hover {
+    height: 95%;
+    box-shadow: 0px 0px 1px rgb(146, 146, 146);
+}
+
+.days input {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.days:hover input {
+    opacity: 1;
+}
+
+.days .showOnClick {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.days:hover .showOnClick {
+
+    opacity: 1;
+}
+
+.days li {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.days:hover li {
+    opacity: 1;
+}
+
+.hText {
+
+    padding: 0;
+    margin: 2px;
+}
+
+.DayText {
+
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 23px;
+    margin-bottom: 8px;
+
+}
+
+#tdlApp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.timer-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    flex-direction: row;
+    transition: 0.5s;
+}
+
+.date-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    flex-direction: row;
+    transition: 0.5s;
+}
+
+
+.main-time-div-container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.timer-container:hover {
+    font-size: 50px;
+}
+
+.date-container:hover {
+    font-size: 50px;
+}
+
+.socialmedia-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.media {
+    width: 50px;
+    height: 50px;
+    transition: 0.2s;
+}
+
+.media:hover {
+    width: 60px;
+    height: 60px;
+}
+
+.media-text {
+    color: black;
+    text-decoration: none;
+}
+
+
+.week-list {
+    width: 75%;
+    height: 90%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: #56778C;
+    font-family: 'Dancing Script', cursive;
+    border: 4px solid #012340;
+    box-shadow: 10px 10px 9px rgba(49, 49, 49, 0.829);
+    transition: 0.5s;
+    flex-direction: column;
+}
+
+.week-list:hover {
+    box-shadow: 5px 5px 9px rgba(49, 49, 49, 0.829);
+}
+
+
+.DateName {
+    width: 25%;
+    height: 100%;
+    /*border: 2px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+}
+
+.DateName2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+   /* border: 2px solid red;*/
+    transition: 0.6s;
+}
+.DateName:hover{
+    width: 30%;
+}
+.DateName2:hover{
+    width: 30%;
+}
+
+.week-list1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.week-list2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.days-for-dateName{
+    width: 80%;
+    height: 50%;
+   /* border: blue 2px solid;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    box-shadow: 3px 3px 7px black;
+}
+.days-for-dateName2{
+    width: 80%;
+    height: 50%;
+   /* border: blue 2px solid;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    box-shadow: 3px 3px 7px black;
+}
+
+
+
+.overlay {
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    z-index: 20;
+    transition: .3s all;
+}
+
+
+/* Стили для модальных окон */
+
+.modal {
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+    /*  Установаем ширину окна  */
+    width: 60%;
+    height: 90%;
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    /* Должен быть выше чем у подложки*/
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    padding: 10px;
+    border-radius: 2px;
+    background: #56778C; 
+    border: 5px #012340 solid;
+    transition: 0.3s ;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/* Стили для кнопок */
+
+.js-open-modal {
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(255, 231, 160);
+    border-radius: 3px;
+}
